@@ -173,7 +173,7 @@
     memory usage: 31.3+ KB
 
 
-## Exploratory Data Analysis
+## Data Exploration
 
 
 
