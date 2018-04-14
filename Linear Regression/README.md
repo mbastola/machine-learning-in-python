@@ -1,17 +1,5 @@
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+** Data head: **
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -89,19 +77,7 @@
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+** Data crude metrics: **
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -183,8 +159,6 @@
 </div>
 
 
-
-    <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 500 entries, 0 to 499
     Data columns (total 8 columns):
     Email                   500 non-null object
