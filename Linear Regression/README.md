@@ -1,7 +1,3 @@
-
-
-**Check the head of customers, and check out its info() and describe() methods.**
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -205,8 +201,6 @@
 
 ## Exploratory Data Analysis
 
-**Explore the data!**
-
 
 
     <seaborn.axisgrid.JointGrid at 0x7ffa895f8a10>
@@ -237,7 +231,7 @@
 ![png](output_13_1.png)
 
 
-** Use jointplot to create a 2D hex bin plot comparing Time on App and Length of Membership.**
+** jointplot to create a 2D hex bin plot comparing Time on App and Length of Membership.**
 
 
 
@@ -249,7 +243,7 @@
 ![png](output_15_1.png)
 
 
-**Explore these types of relationships across the entire data set.**
+**types of relationships across the entire data set.**
 
     <seaborn.axisgrid.PairGrid at 0x7ffaae5f8e90>
 
@@ -259,16 +253,8 @@
 ![png](output_17_1.png)
 
 
-**Based off this plot what looks to be the most correlated feature with Yearly Amount Spent?**
 
-**Create a linear model plot (using seaborn's lmplot) of  Yearly Amount Spent vs. Length of Membership. **
-
-
-```python
-sns.lmplot(x='Length of Membership', y='Yearly Amount Spent',data=customers,)
-```
-
-
+**linear model plot (using seaborn's lmplot) of  Yearly Amount Spent vs. Length of Membership. **
 
 
     <seaborn.axisgrid.FacetGrid at 0x7ffaacef4bd0>
@@ -279,7 +265,7 @@ sns.lmplot(x='Length of Membership', y='Yearly Amount Spent',data=customers,)
 ![png](output_20_1.png)
 
 
-**Print out the coefficients of the model**
+**coefficients of the model**
 
 
 
@@ -336,7 +322,7 @@ sns.lmplot(x='Length of Membership', y='Yearly Amount Spent',data=customers,)
 ![png](output_33_1.png)
 
 
-** Create a scatterplot of the real test values versus the predicted values. **
+** scatterplot of the real test values versus the predicted values. **
 
 
 
@@ -348,21 +334,18 @@ sns.lmplot(x='Length of Membership', y='Yearly Amount Spent',data=customers,)
 ![png](output_35_1.png)
 
 
-## Evaluating the Model
+## Model Evaluation
 
-Evaluate our model performance by calculating the residual sum of squares and the explained variance score (R^2).
+Model performance wrt residual sum of squares and the explained variance score (R^2).
 
-** Calculate the Mean Absolute Error, Mean Squared Error, and the Root Mean Squared Error.**
-
+** Mean Absolute Error, Mean Squared Error, and the Root Mean Squared Error.**
 
 
 mae : 7.74267128583874
+mse : 93.83297800820083
+rmse : 9.686742383701594
 
 
-
-
-
-    
 
 
 
@@ -414,8 +397,8 @@ We still want to figure out the answer to the original question, do we focus our
 
 ** How can we interpret these coefficients? **
 
-**Do you think the company should focus more on their mobile app or on their website?**
+**should the company focus more on their mobile app or on their website?**
 
-Mobile App for time on App shows to have a larger slope wrt yearly amount spent
+Data shows Mobile App since time on App shows to have a larger slope wrt yearly amount spent.
 
 
