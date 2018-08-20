@@ -1,14 +1,17 @@
+In [this project](https://github.com/mbastola/machine-learning-in-python/tree/master/SVM/iris-dataset) we utilize SVM to evaluate ML performanceson IRIS image dataset.
+ 
+
 ## The Data: [Iris flower data set](http://en.wikipedia.org/wiki/Iris_flower_data_set). 
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor), so 150 total samples. Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters.
 
 Here's a picture of the three different Iris types:
 
-![jpeg](output_1_0.jpeg)
+![jpeg](https://github.com/mbastola/machine-learning-in-python/blob/master/SVM/iris-dataset/output_1_0.jpeg)
 
-![jpeg](output_2_0.jpeg)
+![jpeg](https://github.com/mbastola/machine-learning-in-python/blob/master/SVM/iris-dataset/output_2_0.jpeg)
 
-![jpeg](output_3_0.jpeg)
+![jpeg](https://github.com/mbastola/machine-learning-in-python/blob/master/SVM/iris-dataset/output_3_0.jpeg)
 
 
 The dataset contains measurements for 150 iris flowers from three different species.
@@ -245,4 +248,4 @@ The SVM model was pretty good here! For check, we tune the parameters to try to 
     
 
 
-# Slight change, the SVM with default params did a good enough job.
+We notice only a small change, the SVM with default params did a good enough job.

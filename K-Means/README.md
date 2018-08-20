@@ -1,3 +1,6 @@
+In [this project](https://github.com/mbastola/machine-learning-in-python/tree/master/K-Means) we begin unsupervised ML with K-means clustering.
+ 
+
 **Data head**
 
 <div>
@@ -364,7 +367,7 @@
 
 
 
-![png](output_10_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/K-Means/output_10_1.png)
 
 
 **Scatterplot of F.Undergrad versus Outstate where the points are colored by the Private column.**
@@ -373,19 +376,19 @@
 
 
 
-![png](output_12_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/K-Means/output_12_1.png)
 
 
 ** Stacked histogram showing Out of State Tuition based on the Private column.**
 
-![png](output_14_0.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/K-Means/output_14_0.png)
 
 
 **Similar histogram for the Grad.Rate column.**
 
 
 
-![png](output_16_0.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/K-Means/output_16_0.png)
 
 
 ** There seems to be a private school with a graduation rate of higher than 100%.**
@@ -478,7 +481,7 @@
 
 
 
-![png](output_22_0.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/K-Means/output_22_0.png)
 
 
 
