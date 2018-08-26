@@ -1,5 +1,5 @@
 
-In this project, we observe distributions of a read world data. The data comprises of Stock prices of "Google" from year 2014-2018. We will compare normal and t-distributions to fit the observed values. Finally, we will try Mixture of Gaussians to fit the data and note scope and limitations. 
+In [this project](https://github.com/mbastola/machine-learning-in-python/tree/master/Hypothesis-Testing-II-Gaussian-Mixtures), we observe distributions of a read world data. The data comprises of Stock prices of "Google" from year 2014-2018. We will compare normal and t-distributions to fit the observed values. Finally, we will try Mixture of Gaussians to fit the data and note scope and limitations. 
 
 
 ```python
@@ -120,7 +120,7 @@ goog.set_index('date')['close'].plot()
 
 
 
-![png](output_4_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-II-Gaussian-Mixtures/output_4_1.png)
 
 
 Since returns are normalized to 0-1, we will be working with returns instead of prices
@@ -133,7 +133,7 @@ goog['return'].hist(bins=100);
 ```
 
 
-![png](output_6_0.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-II-Gaussian-Mixtures/output_6_0.png)
 
 
 
@@ -180,7 +180,7 @@ goog['return'].hist(bins=100, density=True);
 ```
 
 
-![png](output_12_0.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-II-Gaussian-Mixtures/output_12_0.png)
 
 
 We note that the distribution doesnot quite fit the gaussian distribution due to higher kurtosis.
@@ -226,7 +226,7 @@ goog['return'].hist(bins=100, density=True);
 ```
 
 
-![png](output_20_0.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-II-Gaussian-Mixtures/output_20_0.png)
 
 
 The t-distribution fits the data quite well. However we have one more param that we deal with.
@@ -279,7 +279,7 @@ plt.legend();
 ```
 
 
-![png](output_26_0.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-II-Gaussian-Mixtures/output_26_0.png)
 
 
 We note the performance of GMM with n_components=2. The fit is similar to the t-distibution. The number of params is still 3 since GMM with n_component=2 has 2*DOF-1 where DOF is the degree of freedom of each gaussian.
@@ -314,7 +314,7 @@ plt.legend();
 ```
 
 
-![png](output_29_0.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-II-Gaussian-Mixtures/output_29_0.png)
 
 
 We note the fit is much better with n_components = 10. However, this comes at the cost of 16 additional params. Also, we're in the range of overfitting the data. Finally, there doesnt seem to exist simple Hypothesis testing routine for mixture of gaussians. The best I've seen are Bayes factor methods on the posterior distribution. I plan to discuss Bayesian methods for hypothesis testing on my next project.  
