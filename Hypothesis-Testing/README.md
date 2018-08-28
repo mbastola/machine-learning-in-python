@@ -1,5 +1,5 @@
 
-In this project I implement AB test in numpy. I compare the result with scipy's ttest results. This is an exercise in hypothesis testing and we will still be using scipy t & chi squared distribution class to get the t and chi squared cumulative distribution function. The t tests can be one or two sided depending on the parameter input.
+In [this project](https://github.com/mbastola/machine-learning-in-python/tree/master/Hypothesis-Testing) I implement AB test in numpy. I compare the result with scipy's ttest results. This is an exercise in hypothesis testing and we will still be using scipy t & chi squared distribution class to get the t and chi squared cumulative distribution function. The t tests can be one or two sided depending on the parameter input.
 
 
 ```python
@@ -100,19 +100,8 @@ sns.distplot(a, ax=ax)
 sns.distplot(b, ax=ax)
 ```
 
-    /home/mbastola/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
 
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7ffb6dd130b8>
-
-
-
-
-![png](output_7_2.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing/output_7_2.png)
 
 
 
@@ -296,7 +285,7 @@ sns.distplot(data["Conversion_B"], ax=ax)
 
 
 
-![png](output_23_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing/output_23_1.png)
 
 
 
