@@ -1,5 +1,5 @@
 
-This is a third project in Hypothesis testing that uses Bayesian Methods. Here I reformulate the AB testing problem into MultiArm Bandit and implement 4 widely used algorithms: Epsilon Greedy, Optimistic Initial Conditions, UCB1, and Bayesian (Thompson) Sampling for the AB testing. I then compare and contrast the performance of the algorithms wrt the Bandit problem.
+[This project](https://github.com/mbastola/machine-learning-in-python/tree/master/Hypothesis-Testing-III-Bayesian-Methods) is third in the series of Hypothesis testing project whereby we use Bayesian Methods. Here we reformulate the AB testing problem into MultiArm Bandit and implement 4 widely used algorithms: Epsilon Greedy, Optimistic Initial Conditions, UCB1, and Bayesian (Thompson) Sampling for the AB testing. We then compare and contrast the performance of the algorithms wrt the Bandit problem.
 
 The Multi Arm Bandit (MAB) is a problem widely used in introductory Reinforcement Learning. In MAB, a fixed limited set of resources must be allocated between competing choices in a way that maximizes their expected gain, when each choice's properties are only partially initially, and becomes better understood as we gather more samples by allocating resources to the choice. In essence, we would like to know which resource maximizes the final expected return without us investing too much into resources that may eventually be suboptimal. 
 
@@ -67,7 +67,7 @@ plt.legend(labels=labels, loc='lower right')
 
 
 
-![png](output_5_2.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_5_2.png)
 
 
 We note that the epsilon greedy method is able to estimate the expected reward for all the 3 bandits while also maximizing the overall win rate. The optimal win rate for us is to choose arm = 3 with reward probability 0.75. Our return is 0.727.
@@ -108,7 +108,7 @@ plt.legend(labels=labels, loc='lower right')
 
 
 
-![png](output_8_2.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_8_2.png)
 
 
 ### UCB1
@@ -147,7 +147,7 @@ plt.legend(labels=labels, loc='lower right')
 
 
 
-![png](output_10_2.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_10_2.png)
 
 
 ### Bayesian Sampling
@@ -186,16 +186,16 @@ plt.legend(labels=labels, loc='lower right')
 
 
 
-![png](output_12_2.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_12_2.png)
 
 
 Below is the comparision of the convergence of the 4 methods above:
 
 Convergence:
-![png](compare.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/compare.png)
 
-Estimated Probabilities
-![png](estimated_probs_dist.png)
+Estimated Probabilities:
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/estimated_probs_dist.png)
 
-Total rewards
-![png](total_rewards.png)
+Total rewards:
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/total_rewards.png)
