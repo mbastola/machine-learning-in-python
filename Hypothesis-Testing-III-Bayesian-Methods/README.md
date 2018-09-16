@@ -1,7 +1,7 @@
 
 [This project](https://github.com/mbastola/machine-learning-in-python/tree/master/Hypothesis-Testing-III-Bayesian-Methods) is third in the series of Hypothesis testing project whereby we use Bayesian Methods. Here we reformulate the AB testing problem into MultiArm Bandit and implement 4 widely used algorithms: Epsilon Greedy, Optimistic Initial Conditions, UCB1, and Bayesian (Thompson) Sampling for the AB testing. We then compare and contrast the performance of the algorithms wrt the Bandit problem.
 
-The Multi Arm Bandit (MAB) is a problem widely used in introductory Reinforcement Learning. In MAB, a fixed limited set of resources must be allocated between competing choices in a way that maximizes their expected gain, when each choice's properties are only partially initially, and becomes better understood as we gather more samples by allocating resources to the choice. In essence, we would like to know which resource maximizes the final expected return without us investing too much into resources that may eventually be suboptimal. 
+The Multi Arm Bandit (MAB) is a problem widely used in introductory Reinforcement Learning. In MAB, a fixed limited set of resources must be allocated between competing choices in a way that maximizes their expected gain, when each choice's properties are unknown initially, and becomes better understood as we gather more samples by allocating resources to the choice. In essence, we would like to know which resource maximizes the final expected return without us investing too much into resources that may eventually be suboptimal. 
 
 While Frequentist statistics would have us invest in all possible resources to collect enough data and compute the expected return for classical Hypothesis testing, we use Bayesian method to converge to the optimal resource while also minimizing any sub-optimal investments. The method is online and converges quickly to optimal set of resources without us having to collect all the data and run AB testing on it. One can quickly see the benefits of Bayesian Bandit methods over Frequentist AB testing where the cost of investing into sub-optimal resources to collect data is high, for eg. beating slot machines, investigating stock returns,etc.
 
@@ -56,16 +56,6 @@ plt.legend(labels=labels, loc='lower right')
     num_times_exploited: 8930
     num times selected each bandit: [359.0, 352.0, 9289.0]
     
-    
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x7f82e3f0d3c8>
-
-
-
 
 ![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_5_2.png)
 
@@ -96,16 +86,6 @@ plt.legend(labels=labels, loc='lower right')
     total reward earned: 7448.0
     overall win rate: 0.7448
     num times selected each bandit: [11.0, 24.0, 9968.0]
-    
-    
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x7f82e3e77f98>
-
-
 
 
 ![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_8_2.png)
@@ -136,16 +116,6 @@ plt.legend(labels=labels, loc='lower right')
     overall win rate: 0.7421
     num times selected each bandit: [60.0, 186.0, 9757.0]
     
-    
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x7f82e3de6908>
-
-
-
 
 ![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_10_2.png)
 
@@ -175,16 +145,6 @@ plt.legend(labels=labels, loc='lower right')
     overall win rate: 0.7465
     num times selected each bandit: [6.0, 11.0, 9983.0]
     
-    
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x7f82e3dcee80>
-
-
-
 
 ![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_12_2.png)
 
