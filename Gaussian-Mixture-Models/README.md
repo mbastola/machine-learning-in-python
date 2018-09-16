@@ -1,4 +1,4 @@
-In this project, lets explore Gaussian Mixture models. GMMs are universal approximators. This means that any probability density can be approximated to arbitrary precision using mixture of gaussian densities. We saw a glimpse of it in our Hypothesis Testing II project. GMMs are go-to models for unsupervised learning schemes and one of my favorite ML models. In fact, they utilize (usually) EM algorithm which is an itertative method of estimating statistical paramters simiar to and on par with backpropagations in Neural nets.  In this project we write GMMs from scratch using numpy and stats libraries and compare it against K-means and GMM implementation of Scikit learn. 
+In [this project](https://github.com/mbastola/machine-learning-in-python/blob/master/Gaussian-Mixture-Models/README.md) we explore the Gaussian Mixture models. GMMs are universal approximators. This means that any probability density can be approximated to arbitrary precision using mixture of gaussian densities. We saw a glimpse of it in our Hypothesis Testing II project. GMMs are go-to models for unsupervised learning schemes and one of my favorite ML models. In fact, they utilize (usually) EM algorithm, which is an iterative method of estimating statistical parameters similar to and I belive, on par with, backpropagations in Neural nets.  In this project we write GMMs from scratch using numpy and stats libraries and compare it against K-means and GMM implementation of Scikit learn. 
 
 
 ```python
@@ -13,10 +13,6 @@ import seaborn as sns
 sns.set()
 from gmmclass import GaussianMixtureClustering
 ```
-
-    /home/mbastola/anaconda3/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.datasets.samples_generator module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.datasets. Anything that cannot be imported from sklearn.datasets is now part of the private API.
-      warnings.warn(message, FutureWarning)
-
 
 Our implementation resides in gmmclass.py while sklearn has its GaussianMixture class. Below we are comparing sklearns non linear datasets examples to compare and contrast GMMs with Kmeans.
 
@@ -88,7 +84,7 @@ plt.show()
 
 
     
-![png](imgs/output_4_0.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Gaussian-Mixture-Models/imgs/output_4_0.png)
     
 
 
@@ -125,13 +121,8 @@ for i_dataset, (dataset, algo_params) in enumerate(dataset0):
 plt.show()
 ```
 
-
-    <Figure size 432x288 with 0 Axes>
-
-
-
     
-![png](imgs/output_6_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Gaussian-Mixture-Models/imgs/output_6_1.png)
     
 
 
@@ -168,13 +159,8 @@ for i_dataset, (dataset, algo_params) in enumerate(dataset0):
 plt.show()
 ```
 
-
-    <Figure size 432x288 with 0 Axes>
-
-
-
     
-![png](imgs/output_8_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Gaussian-Mixture-Models/imgs/output_8_1.png)
     
 
 
@@ -212,13 +198,8 @@ for i_dataset, (dataset, algo_params) in enumerate(dataset0):
 plt.show()
 ```
 
-
-    <Figure size 432x288 with 0 Axes>
-
-
-
     
-![png](imgs/output_10_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Gaussian-Mixture-Models/imgs/output_10_1.png)
     
 
 
@@ -257,13 +238,8 @@ plt.show()
 
 ```
 
-
-    <Figure size 432x288 with 0 Axes>
-
-
-
     
-![png](imgs/output_13_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Gaussian-Mixture-Models/imgs/output_13_1.png)
     
 
 
@@ -314,12 +290,7 @@ for i_dataset, (dataset, algo_params) in enumerate(dataset0[3:]):
 plt.show()
 ```
 
-
-    <Figure size 432x288 with 0 Axes>
-
-
-
     
-![png](imgs/output_16_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Gaussian-Mixture-Models/imgs/output_16_1.png)
     
 
