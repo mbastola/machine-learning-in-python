@@ -25,9 +25,7 @@ sns.set_palette("viridis")
 
 ## 1. Maze Environment and Visualization
 
-First, I need to define the environment. The maze is a 2D grid where each cell can be a Wall (`#`), a Path (` `), a Start (`S`), or an End (`E`). The agent's possible actions are to move to adjacent cells (Up, Down, Left, Right), but not diagonally.
-
-To better analyze the results, I'll create a visualization function using `matplotlib` instead of just printing text. This will help in understanding the observation space (the maze grid) and the solution paths.
+First, we'll define the environment. The maze is a 2D grid where each cell can be a Wall (`#`), a Path (` `), a Start (`S`), or an End (`E`). The agent's possible actions are to move to adjacent cells (Up, Down, Left, Right), but not diagonally.
 
 
 ```python
@@ -95,7 +93,7 @@ def plot_maze(maze, path=None, title="Maze"):
 
 ## 2. Algorithm Implementations
 
-Here I'll implement the three search algorithms. I'm modifying them slightly from the original script to return not just the path and its length, but also the number of nodes explored. This is a crucial metric for comparing their search efficiency.
+Now we implement the three search algorithms. I'm modifying them slightly from the original script to return not just the path and its length, but also the number of nodes explored. This is a crucial metric for comparing their search efficiency.
 
 ### A* Search (Informed Search)
 A* is a "best-first" search algorithm that is both complete and optimal. It uses a heuristic function, `h(n)`, to estimate the cost from the current node to the goal. It maintains a priority queue of nodes to visit, prioritized by `f(n) = g(n) + h(n)`, where `g(n)` is the known cost from the start to the current node. For my heuristic, I'll use the **Manhattan distance**, which is admissible (it never overestimates the true cost) for a grid where only cardinal moves are allowed.
@@ -213,7 +211,7 @@ def dfs_search(maze):
 
 ## 3. Experimental Procedure
 
-Now I'll run the experiments. I have three sample mazes (`maze1.csv`, `maze2.csv`, `maze3.csv`) of varying complexity. For each maze, I will:
+We have three sample mazes (`maze1.csv`, `maze2.csv`, `maze3.csv`) of varying complexity. For each maze, I will:
 1. Load and visualize the maze.
 2. Run each of the three algorithms.
 3. Record the execution time, path length, and nodes explored.
@@ -533,7 +531,7 @@ results_df = run_experiments()
 
 ## 4. Results and Comparative Analysis
 
-With the experiments complete, I can now aggregate and visualize the results to draw conclusions. I'll create bar plots to compare the three key metrics across the different mazes.
+With the experiments complete, we aggregate and visualize the results to draw conclusions.
 
 
 ```python
@@ -589,7 +587,7 @@ The experimental results confirm the initial hypothesis plus provide several key
 
 1.  **Optimality (Path Length):** As expected, both **A* and BFS consistently found the shortest path** in all mazes. Their path lengths are identical. In contrast, **DFS found a valid path but it was significantly longer** and non-optimal. This is its most significant drawback; it prioritizes depth over breadth, often taking a convoluted route to the goal.
 
-2.  **Search Efficiency (Nodes Explored):** This is where the difference between informed and uninformed search becomes clear. **A* consistently explored the fewest nodes**. Its heuristic function (Manhattan distance) effectively guided the search towards the goal, pruning a large number of irrelevant paths. BFS, lacking a heuristic, had to explore a much larger area of the maze, especially in the more complex `maze3.csv`. DFS explored a number of nodes somewhere between A* and BFS, as it quickly dives deep down one path.
+2.  **Search Efficiency (Nodes Explored):** This is where the difference between informed and uninformed search become more clear. **A* consistently explored the fewest nodes**. Its heuristic function (Manhattan distance) effectively guided the search towards the goal, pruning a large number of irrelevant paths. BFS, lacking a heuristic, had to explore a much larger area of the maze, especially in the more complex `maze3.csv`. DFS explored a number of nodes somewhere between A* and BFS, as it quickly dives deep down one path.
 
 3.  **Speed (Execution Time):** The execution time is closely correlated with the number of nodes explored. **A* was the fastest algorithm** for finding the optimal path. While DFS was sometimes faster in raw time (especially on `maze2.csv`), this speed comes at the cost of a non-optimal solution. BFS was the slowest of the three due to its exhaustive, layer-by-layer exploration.
 
