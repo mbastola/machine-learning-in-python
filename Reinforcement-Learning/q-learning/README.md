@@ -9,7 +9,7 @@ Our primary research question is: How do the learned policies and value function
 
 
 ```python
-import gymnasium as gym
+import gym
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -404,14 +404,4 @@ Our investigation into model-free TD learning brings some key insights:
 
 3.  **Off-Policy (Q-Learning) is sortof Aggressive:** Q-Learning directly learns the optimal value function, `Q*`, independent of the policy being followed. This allows it to be more aggressive and find the true optimal path, which closely matched the one found by Value Iteration. It learns what the best thing to do is, even if it's currently doing something else for the sake of exploration.
 
-4.  **The Trade-off:** The choice between SARSA and Q-Learning depends on the application. If an agent needs to learn a safe policy in a high-risk environment where exploration mistakes are costly (e.g., a real-world robot), on-policy SARSA is a strong candidate. If the goal is to find the absolute best path and the exploration phase is not safety-critical (e.g., a game simulation), off-policy Q-Learning is generally more direct and effective.
-
-
-```python
-
-```
-
-
-```python
-
-```
+4.  **The Trade-off:** Note: The choice between SARSA and Q-Learning depends on the application. If an agent needs to learn a safe policy in a high-risk environment where exploration mistakes are costly (e.g., a real-world robot), on-policy SARSA is a strong candidate. If the goal is to find the absolute best path and the exploration phase is not safety-critical (e.g., a game simulation), off-policy Q-Learning is generally more direct and effective.
