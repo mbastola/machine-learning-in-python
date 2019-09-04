@@ -1,6 +1,6 @@
 In this project I analyze and compare the performance of three fundamental pathfinding algorithms: **A* Search**, **Breadth-First Search (BFS)**, and **Depth-First Search (DFS)**. The goal is to understand their underlying mechanics, performance characteristics, and the trade-offs between them when applied to solving grid-based mazes.
 
-We will be focusing on the following key metrics:
+I will be focusing on the following key metrics:
 1.  **Path Optimality:** Does the algorithm guarantee the shortest path?
 2.  **Execution Time:** How quickly does each algorithm find a solution?
 3.  **Search Efficiency:** How many nodes does each algorithm need to explore before finding the goal?
@@ -25,7 +25,7 @@ sns.set_palette("viridis")
 
 ## 1. Maze Environment and Visualization
 
-First, we'll define the environment. The maze is a 2D grid where each cell can be a Wall (`#`), a Path (` `), a Start (`S`), or an End (`E`). The agent's possible actions are to move to adjacent cells (Up, Down, Left, Right), but not diagonally.
+First, lets define the environment. The maze is a 2D grid where each cell can be a Wall (`#`), a Path (` `), a Start (`S`), or an End (`E`). The agent's possible actions are to move to adjacent cells (Up, Down, Left, Right), but not diagonally.
 
 
 ```python
@@ -275,7 +275,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_1.png)
+![png](images/output_13_1.png)
     
 
 
@@ -296,7 +296,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_3.png)
+![png](images/output_13_3.png)
     
 
 
@@ -320,7 +320,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_5.png)
+![png](images/output_13_5.png)
     
 
 
@@ -344,7 +344,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_7.png)
+![png](images/output_13_7.png)
     
 
 
@@ -365,7 +365,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_9.png)
+![png](images/output_13_9.png)
     
 
 
@@ -383,7 +383,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_11.png)
+![png](images/output_13_11.png)
     
 
 
@@ -404,7 +404,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_13.png)
+![png](images/output_13_13.png)
     
 
 
@@ -425,7 +425,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_15.png)
+![png](images/output_13_15.png)
     
 
 
@@ -449,7 +449,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_17.png)
+![png](images/output_13_17.png)
     
 
 
@@ -470,7 +470,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_19.png)
+![png](images/output_13_19.png)
     
 
 
@@ -494,7 +494,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_21.png)
+![png](images/output_13_21.png)
     
 
 
@@ -518,7 +518,7 @@ results_df = run_experiments()
 
 
     
-![png](output_13_23.png)
+![png](images/output_13_23.png)
     
 
 
@@ -575,7 +575,7 @@ plt.show()
 
 
     
-![png](output_15_1.png)
+![png](images/output_15_1.png)
     
 
 

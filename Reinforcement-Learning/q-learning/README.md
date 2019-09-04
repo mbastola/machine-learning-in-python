@@ -368,7 +368,7 @@ plot_learning_curves(rewards_sarsa, rewards_q_learning)
 
 
     
-![png](imagesoutput_23_0.png)
+![png](images/output_23_0.png)
     
 
 

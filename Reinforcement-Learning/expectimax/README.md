@@ -146,7 +146,7 @@ It includes three types of nodes:
 
 Chess is a deterministic game, so it doesn't have true chance nodes. However, we can use the Expectimax framework to model an opponent who does not play optimally. Instead of assuming the opponent will always choose the move that is worst for us (the 'min' part of Min-Max), we can model an opponent who might play randomly. 
 
-For this experiment, I implement an Expectimax search where the **opponent's move is treated as a chance event**. We will assume the opponent chooses any of their legal moves with **equal probability**. This models a non-optimal, random opponent. The research question is: how does the best move change when we plan against a random opponent versus a perfect one..
+For this experiment, I will implement an Expectimax search where the **opponent's move is treated as a chance event**. We will assume the opponent chooses any of their legal moves with **equal probability**. This models a non-optimal, random opponent. My research question is: how does the best move change when we plan against a random opponent versus a perfect one..
 
 
 ```python

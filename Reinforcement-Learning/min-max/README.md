@@ -1,10 +1,10 @@
 In this project I explore the foundational principles of game-playing AI by implementing the **Min-Max algorithm** for the game of chess. This log will document the process of building an AI that can evaluate board positions and select moves based on a recursive search of future possibilities.
 
-The history of artificial intelligence is deeply intertwined with chess. For decades, the game was considered a "drosophila" for AI research—a complex, well-defined domain perfect for testing new ideas. The ultimate goal was to create a machine that could defeat a reigning human world champion.
+The history of artificial intelligence is deeply intertwined with chess. For decades, the game was considered a "drosophila" for AI research, a complex, well-defined domain perfect for testing new ideas. The ultimate goal was to create a machine that could defeat a reigning human world champion.
 
-This quest culminated in the historic 1997 match between World Champion **Garry Kasparov** and IBM's supercomputer, **Deep Blue**. When Deep Blue won the match, it was a landmark moment. While the machine's victory was the result of a massive engineering effort—including custom hardware capable of evaluating 200 million positions per second, extensive opening books, and endgame tablebases—at its core was a highly optimized version of the algorithm we will investigate today: **Min-Max with Alpha-Beta Pruning**.
+This quest culminated in the historic 1997 match between World Champion **Garry Kasparov** and IBM's supercomputer, **Deep Blue**. When Deep Blue won the match, it was a landmark moment. While the machine's victory was the result of a massive engineering effort—including custom hardware capable of evaluating 200 million positions per second, extensive opening books, and endgame tablebases, at its core was a highly optimized version of the algorithm we will investigate today: **Min-Max with Alpha-Beta Pruning**.
 
-My goal is not to build another Deep Blue, but to understand the fundamental logic that powered it. We will build a simplified engine to appreciate the interplay between search depth, evaluation functions, and computational complexity.
+Our goal is not to build another Deep Blue, but to understand the fundamental logic that powered it. We will build a simplified engine to appreciate the interplay between search depth, evaluation functions, and computational complexity.
 
 
 ```python
@@ -166,7 +166,7 @@ The Min-Max algorithm explores the tree of possible moves. It assumes both playe
 - **Maximizing Player (Us):** Tries to choose a move that leads to a position with the highest possible score.
 - **Minimizing Player (Opponent):** Tries to choose a move that leads to a position with the lowest possible score.
 
-Searching the entire game tree is impossible. We must limit our search to a certain **depth**. A deeper search means a smarter AI, but it also means exponentially more computation.
+Searching the entire game tree is impossible. So we limit our search to a certain **depth**. A deeper search means a smarter AI, but it also means exponentially more computation.
 
 **Alpha-Beta Pruning** is a critical optimization. It allows us to "prune" entire branches of the game tree that we know cannot influence the final decision, dramatically speeding up the search without affecting the outcome.
 
