@@ -4,12 +4,7 @@ The FrozenLake environment presents a scenario where an agent must travel from a
 
 
 ```python
-
-```
-
-
-```python
-import gymnasium as gym
+import gym
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -372,18 +367,3 @@ The investigation successfully demonstrated the application of Value Iteration a
 4.  **Visualization is Key:** Transforming the numerical output (value functions and policies) into visual heatmaps and vector fields provides a much deeper and more intuitive understanding of the agent's learned behavior.
 
 Next we explore more complex reinforcement learning problems where the model of the environment is not known, requiring model-free methods like Q-Learning or SARSA.
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```

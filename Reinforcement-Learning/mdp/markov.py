@@ -1,5 +1,5 @@
 
-import gymnasium as gym
+import gym
 import numpy as np
 
 env = gym.make('FrozenLake-v1', is_slippery=True, render_mode='rgb_array')
