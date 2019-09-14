@@ -5,7 +5,7 @@ In this project I research into **model-free** reinforcement learning, specifica
 1.  **SARSA (State-Action-Reward-State-Action):** An *on-policy* algorithm that learns the value of the policy it is currently following.
 2.  **Q-Learning:** An *off-policy* algorithm that learns the value of the optimal policy, irrespective of the agent's exploratory actions.
 
-Our primary research question is: How do the learned policies and value functions from these model-free methods compare to the true optimal policy derived from dynamic programming, and what are the practical differences between on-policy and off-policy learning in this stochastic environment?
+My primary research question is: How do the learned policies and value functions from these model-free methods compare to the true optimal policy derived from dynamic programming, and what are the practical differences between on-policy and off-policy learning in this stochastic environment?
 
 
 ```python
@@ -24,11 +24,7 @@ plt.style.use('seaborn-v0_8-whitegrid')
 
 ```python
 # Initialize the environment
-# is_slippery=True introduces stochasticity, making it a more interesting problem.
 env = gym.make('FrozenLake-v1', is_slippery=True, render_mode='rgb_array')
-
-# We need to unwrap the environment to access the transition probabilities (P)
-# for our model-based baseline algorithms.
 unwrapped_env = env.unwrapped
 
 n_states = unwrapped_env.observation_space.n
@@ -56,7 +52,7 @@ env.reset()
 
 
 ```python
-# Let's render the environment to visualize the state space.
+# Let's render to visualize the state space.
 plt.figure(figsize=(6, 6))
 plt.title("FrozenLake-v1 State Space")
 plt.imshow(env.render())
@@ -66,7 +62,7 @@ plt.show()
 
 
     
-![png](output_5_0.png)
+![png](images/output_5_0.png)
     
 
 
@@ -110,7 +106,7 @@ def value_iteration(env, gamma=0.99, theta=1e-8):
         policy[s] = np.argmax(q_sa)
     return V, policy
 
-# Run the value iteration algorithm on the unwrapped environment
+# Run the value iteration on the unwrapped environment
 optimal_V_vi, optimal_policy_vi = value_iteration(unwrapped_env)
 ```
 
@@ -158,7 +154,7 @@ plot_results(optimal_V_vi, optimal_policy_vi, "Baseline: Results from Value Iter
 
 
     
-![png](output_10_0.png)
+![png](images/output_10_0.png)
     
 
 
@@ -252,7 +248,7 @@ plot_results(V_sarsa, policy_sarsa, "SARSA (On-Policy) Results")
 
 
     
-![png](output_15_1.png)
+![png](images/output_15_1.png)
     
 
 
@@ -334,11 +330,11 @@ plot_results(V_q_learning, policy_q_learning, "Q-Learning (Off-Policy) Results")
 
 
     
-![png](output_19_1.png)
+![png](images/output_19_1.png)
     
 
 
-**Researcher's Notes on Q-Learning:**
+**Notes on Q-Learning:**
 
 The results from Q-Learning are striking. The learned policy is nearly identical to the true optimal policy from Value Iteration. This is because Q-Learning is an off-policy method; it learns the optimal path even while it's taking random, exploratory steps. It doesn't let its exploration strategy make it overly cautious. This demonstrates the power of off-policy learning for finding the true optimal policy.
 
@@ -372,11 +368,11 @@ plot_learning_curves(rewards_sarsa, rewards_q_learning)
 
 
     
-![png](output_23_0.png)
+![png](imagesoutput_23_0.png)
     
 
 
-Finally, let's programmatically check if the learned policies match our baseline.
+Finally, let's do a final check if the learned policies match our baseline.
 
 
 ```python
