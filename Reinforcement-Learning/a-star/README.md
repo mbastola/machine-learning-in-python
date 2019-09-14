@@ -93,10 +93,8 @@ def plot_maze(maze, path=None, title="Maze"):
 
 ## 2. Algorithm Implementations
 
-Now we implement the three search algorithms. I'm modifying them slightly from the original script to return not just the path and its length, but also the number of nodes explored. This is a crucial metric for comparing their search efficiency.
-
 ### A* Search (Informed Search)
-A* is a "best-first" search algorithm that is both complete and optimal. It uses a heuristic function, `h(n)`, to estimate the cost from the current node to the goal. It maintains a priority queue of nodes to visit, prioritized by `f(n) = g(n) + h(n)`, where `g(n)` is the known cost from the start to the current node. For my heuristic, I'll use the **Manhattan distance**, which is admissible (it never overestimates the true cost) for a grid where only cardinal moves are allowed.
+A* is a "best-first" search algorithm that is both complete and optimal. It uses a heuristic function, `h(n)`, to estimate the cost from the current node to the goal. It maintains a priority queue of nodes to visit, prioritized by `f(n) = g(n) + h(n)`, where `g(n)` is the known cost from the start to the current node. For my heuristic, We'll use the **Manhattan distance**, which is admissible (it never overestimates the true cost) for a grid where only cardinal moves are allowed.
 
 
 ```python
