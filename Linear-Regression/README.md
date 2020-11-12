@@ -1,3 +1,5 @@
+[This project](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression) comprises of Linear Regression in python.
+
 <div>
 ** Data head: **
 <table border="1" class="dataframe">
@@ -182,7 +184,7 @@
 
 
 
-![png](output_10_2.png)
+![png](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression/output_10_2.png)
 
 
 
@@ -191,7 +193,7 @@
 
 
 
-![png](output_11_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression/output_11_1.png)
 
 
 ** with the Time on App column instead. **
@@ -202,7 +204,7 @@
 
 
 
-![png](output_13_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression/output_13_1.png)
 
 
 ** jointplot to create a 2D hex bin plot comparing Time on App and Length of Membership.**
@@ -214,7 +216,7 @@
 
 
 
-![png](output_15_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression/output_15_1.png)
 
 
 **types of relationships across the entire data set.**
@@ -224,7 +226,7 @@
 
 
 
-![png](output_17_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression/output_17_1.png)
 
 
 
@@ -236,7 +238,7 @@
 
 
 
-![png](output_20_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression/output_20_1.png)
 
 
 **coefficients of the model**
@@ -293,7 +295,7 @@
 
 
 
-![png](output_33_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression/output_33_1.png)
 
 
 ** scatterplot of the real test values versus the predicted values. **
@@ -305,7 +307,7 @@
 
 
 
-![png](output_35_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression/output_35_1.png)
 
 
 ## Model Evaluation
@@ -331,7 +333,7 @@ rmse : 9.686742383701594
 
 
 
-![png](output_39_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression/output_39_1.png)
 
 
 ## Conclusion
