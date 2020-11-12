@@ -1,4 +1,4 @@
-[This project](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression) comprises of Linear Regression in python.
+[This project](https://github.com/mbastola/machine-learning-in-python/edit/master/Linear-Regression) comprised of Linear Regression in python.
 
 <div>
 ** Data head: **
