@@ -1,3 +1,6 @@
+In [this project](https://github.com/mbastola/machine-learning-in-python/tree/master/Trees) we utilize Decision Trees and Random Forest to evaluate ML performances.
+
+
 ### Data: Lending data from 2007-2010 (https://www.lendingclub.com/info/download-data.action) to classify and predict whether or not the borrower paid back their loan in full. 
 ** Data head **
 
@@ -382,7 +385,7 @@
 
 
 
-![png](output_10_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Trees/output_10_1.png)
 
 
 ** Similar figure, except this time select by the not.fully.paid column.**
@@ -392,7 +395,7 @@
 
 
 
-![png](output_12_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Trees/output_12_1.png)
 
 
 ** Countplot using seaborn showing the counts of loans by purpose, with the color hue defined by not.fully.paid. **
@@ -402,7 +405,7 @@
 
 
 
-![png](output_14_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Trees/output_14_1.png)
 
 
 ** Trend between FICO score and interest rate using jointplot.**
@@ -412,7 +415,7 @@
 
 
 
-![png](output_16_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Trees/output_16_1.png)
 
 
 ** Lmplots to see if the trend differed between not.fully.paid and credit.policy. **
@@ -421,7 +424,7 @@
     <Figure size 864x576 with 0 Axes>
 
 
-![png](output_18_2.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Trees/output_18_2.png)
 
 
 

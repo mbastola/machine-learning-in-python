@@ -1,5 +1,5 @@
 
-In this project I test SVM on facial expression data: https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge. Here I only deal with two label classes: Happy and Angry.
+In [this project](https://github.com/mbastola/machine-learning-in-python/tree/master/SVM/facial-expressions) I test SVM on facial expression data: https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge. Here I only deal with two label classes: Happy and Angry.
 
 
 ```python
@@ -40,7 +40,7 @@ sns.countplot(x='emotion',data=df)
 
 
 
-![png](output_2_2.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/SVM/facial-expressions/output_2_2.png)
 
 
 
@@ -68,7 +68,7 @@ sns.countplot(x=y)
 
 
 
-![png](output_5_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/SVM/facial-expressions/output_5_1.png)
 
 
 We parse input as string of pixels to list of nparrays
@@ -125,7 +125,7 @@ plt.plot(pca.explained_variance_ratio_)
 
 
 
-![png](output_12_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/SVM/facial-expressions/output_12_1.png)
 
 
 
@@ -141,7 +141,7 @@ plt.plot(pca.singular_values_)
 
 
 
-![png](output_13_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/SVM/facial-expressions/output_13_1.png)
 
 
 
@@ -163,7 +163,7 @@ plt.scatter(scaled_X_pca[:,0],scaled_X_pca[:,1],c=y)
 
 
 
-![png](output_15_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/SVM/facial-expressions/output_15_1.png)
 
 
 Since the data is looks linearly inseparable, we will use non-linear kernel.

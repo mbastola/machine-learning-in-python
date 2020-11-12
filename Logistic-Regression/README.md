@@ -1,3 +1,5 @@
+[This Project](https://github.com/mbastola/machine-learning-in-python/tree/master/Logistic-Regression) comprises of Logistic Regression exercise in python.
+
 **Data Head**
 <div>
 <table border="1" class="dataframe">
@@ -207,7 +209,7 @@
 
 
 
-![png](output_10_2.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Logistic-Regression/output_10_2.png)
 
 
 **Jointplot showing Area Income versus Age.**
@@ -217,7 +219,7 @@
 
 
 
-![png](output_12_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Logistic-Regression/output_12_1.png)
 
 
 **Jointplot showing the kde distributions of Daily Time spent on site vs. Age.**
@@ -227,7 +229,7 @@
 
 
 
-![png](output_14_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Logistic-Regression/output_14_1.png)
 
 
 ** Jointplot of 'Daily Time Spent on Site' vs. 'Daily Internet Usage'**
@@ -238,7 +240,7 @@
 
 
 
-![png](output_16_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Logistic-Regression/output_16_1.png)
 
 
 ** Pairplot with the hue defined by the 'Clicked on Ad' column feature.**
@@ -248,7 +250,7 @@
 
 
 
-![png](output_18_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Logistic-Regression/output_18_1.png)
 
 
 ### Model Evaluation

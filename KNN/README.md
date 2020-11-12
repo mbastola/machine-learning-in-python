@@ -1,3 +1,6 @@
+In [this project](https://github.com/mbastola/machine-learning-in-python/tree/master/KNN) we try out the most common Nearest neighbors technique: K-NN.
+ 
+
 
 **Data Info**
 
@@ -31,7 +34,7 @@ Since this data is artificial, we'll just do a large pairplot with seaborn.
 
 
 
-![png](output_8_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/KNN/output_8_1.png)
 
 
 **Converted the scaled features to a dataframe **
@@ -162,7 +165,7 @@ Since this data is artificial, we'll just do a large pairplot with seaborn.
 
 
 
-![png](output_37_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/KNN/output_37_1.png)
 
 
 ## Retrained with new K Value

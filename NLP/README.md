@@ -1,3 +1,6 @@
+In [this project](https://github.com/mbastola/machine-learning-in-python/tree/master/NLP) we employ Sklearn's pipelines to compare performances two robust models for NLP : Multinomial Naive Bayes and the Random Forests.
+ 
+
 ## Data: [Yelp Review Data Set from Kaggle](https://www.kaggle.com/c/yelp-recsys-2013).
 
 ** Data Head **
@@ -188,7 +191,7 @@
     <seaborn.axisgrid.FacetGrid at 0x7facdee80410>
 
 
-![png](output_13_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/NLP/output_13_1.png)
 
 **Boxplot of text length for each star category.**
 
@@ -198,7 +201,7 @@
 
 
 
-![png](output_15_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/NLP/output_15_1.png)
 
 **Countplot of the number of occurrences for each type of star rating.**
 
@@ -207,7 +210,7 @@
 
 
 
-![png](output_17_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/NLP/output_17_1.png)
 
 
 
@@ -326,7 +329,7 @@
 
 
 
-![png](output_25_1.png)
+![png](https://github.com/mbastola/machine-learning-in-python/blob/master/NLP/output_25_1.png)
 
 
 ## NLP Classification
