@@ -56,16 +56,6 @@ plt.legend(labels=labels, loc='lower right')
     num_times_exploited: 8930
     num times selected each bandit: [359.0, 352.0, 9289.0]
     
-    
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x7f82e3f0d3c8>
-
-
-
 
 ![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_5_2.png)
 
@@ -96,16 +86,6 @@ plt.legend(labels=labels, loc='lower right')
     total reward earned: 7448.0
     overall win rate: 0.7448
     num times selected each bandit: [11.0, 24.0, 9968.0]
-    
-    
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x7f82e3e77f98>
-
-
 
 
 ![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_8_2.png)
@@ -136,16 +116,6 @@ plt.legend(labels=labels, loc='lower right')
     overall win rate: 0.7421
     num times selected each bandit: [60.0, 186.0, 9757.0]
     
-    
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x7f82e3de6908>
-
-
-
 
 ![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_10_2.png)
 
@@ -175,16 +145,6 @@ plt.legend(labels=labels, loc='lower right')
     overall win rate: 0.7465
     num times selected each bandit: [6.0, 11.0, 9983.0]
     
-    
-
-
-
-
-
-    <matplotlib.legend.Legend at 0x7f82e3dcee80>
-
-
-
 
 ![png](https://github.com/mbastola/machine-learning-in-python/blob/master/Hypothesis-Testing-III-Bayesian-Methods/imgs/output_12_2.png)
 
